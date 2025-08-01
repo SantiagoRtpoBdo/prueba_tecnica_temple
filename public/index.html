@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SantyDev</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🔍 Solucionador de Sopa de Letras</h1>
+            <p>Encuentra palabras en horizontal, vertical y diagonal</p>
+        </header>
+
+        <main>
+            <form id="wordSearchForm">
+                <div>
+                    <div>
+                    <label for="matrix">📋 Matriz (separada por comas):</label>
+                    <textarea id="matrix" rows="12" required placeholder="N,D,E,K,I,C,A,N,G,U,R,O,G,E&#10;S,X,R,Y,K,V,I,I,Q,G,W,Q,O,D&#10;..."></textarea>
+                    <small>Ingresa cada fila en una línea nueva</small>
+                </div>
+                <div>
+                    <label for="words">📝 Palabras a buscar:</label>
+                    <textarea id="words" rows="12" required placeholder="GATO&#10;PERRO&#10;LEON&#10;..."></textarea>
+                    <small>Una palabra por línea</small>
+                </div>
+                </div>
+
+            <div>
+                <button type="submit">
+                    <span>🔍</span> Buscar Palabras
+                </button>
+                <button type="button" id="clearBtn">
+                    <span>🗑️</span> Limpiar
+                </button>
+            </div>
+
+            </form>
+            <div id="results" class="hidden">
+                <div>
+                        <h2>📊 Resultados de la Búsqueda</h2>
+                    <div>
+                        <span>
+                            <span id="foundCount">0</span>
+                            <span>Encontradas</span>
+                        </span>
+                        <span>
+                            <span id="notFoundCount">0</span>
+                            <span>No Encontradas</span>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>✅ Palabras Encontradas</h3>
+                        <ul id="foundList"></ul>
+                    </div>
+                    <div>
+                        <h3>❌ Palabras No Encontradas</h3>
+                        <ul id="notFoundList"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
