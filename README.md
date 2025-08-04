@@ -1,6 +1,6 @@
 # Solucionador de Sopa de Letras
 
-Aplicación web para resolver sopas de letras, detectando palabras en horizontal, vertical y diagonal en ambas direcciones. El proyecto forma parte de una prueba técnica de desarrollo.
+Aplicación web para resolver sopas de letras, detectando palabras en todas las direcciones (horizontal, vertical, diagonales) y resaltarlas en una matriz visual. Este proyecto forma parte de una prueba técnica de desarrollo.
 
 ## Tecnologías utilizadas
 
@@ -12,6 +12,7 @@ Aplicación web para resolver sopas de letras, detectando palabras en horizontal
 ## Recursos especiales
 
 - Búsqueda de palabras en matriz en 8 direcciones.
+- Visualización interactiva de la matriz con las letras encontradas resaltadas.
 - Interfaz adaptable para pantallas medianas.
 - Separación clara de lógica (`script.js`), presentación (`style.css`) y estructura (`index.html`).
 
@@ -22,6 +23,7 @@ Aplicación web para resolver sopas de letras, detectando palabras en horizontal
 3. Ingresa la matriz (una línea por fila, letras separadas por comas).
 4. Ingresa las palabras a buscar (una por línea).
 5. Haz clic en **Buscar Palabras** para ver los resultados.
+6. Usa el botón **Mostrar sopa de letras** para ver visualmente las palabras resaltadas.
 
 ## Nota: importante
 
@@ -69,8 +71,7 @@ NUTRIA
 - `index.html` – estructura del sitio
 - `style.css` – estilos básicos
 - `script.js` – lógica de búsqueda
-- `guia-usuario.docx` – guía visual y explicativa para el usuario
 
 ## Autor
 
-Desarrollado por Santiago RB como parte de una prueba técnica para la empresa TEMPLE.
+Desarrollado por Santiago como parte de una prueba técnica para la empresa **TEMPLE**.
