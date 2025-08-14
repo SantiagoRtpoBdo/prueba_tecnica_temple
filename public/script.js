@@ -14,7 +14,7 @@ $('wordSearchForm').addEventListener('submit', function (e) {
     }
 
     try {
-        const matrix = matrixText.split('\n').map(r => r.split(',').map(c => c.trim().toUpperCase()));
+        const matrix = matrixText.split('\n').map(r => r.split(',').map(c => c.trim().toUpperCase()).filter(Boolean));
         if (!matrix.every(row => row.length === matrix[0].length)) {
             throw new Error('La matriz debe tener todas las filas del mismo tamaño.');
         }
